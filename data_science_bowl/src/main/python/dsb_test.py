@@ -32,3 +32,5 @@ df_train_sample = df_train[df_train.installation_id.isin(id_list)]
 import json
 df_train_sample = pd.concat([df_train_sample.drop(['event_data'],axis=1),\
                              df_train_sample['event_data'].apply(json.loads).apply(pd.Series)], axis=1)
+
+# this is Lauren's test change
